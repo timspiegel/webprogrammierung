@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>🔎 Benutzersuche</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" /> 
+    <script src="script.js"></script>
+</head>
+
+<header>
+    <h1>Nutzersuche</h1>
+</header>
+
+<body>
+    <!-- ===================== -->
+    <!-- Inhalt der Startseite -->
+    <!-- ===================== -->
+    <main id="page-start">
+        <section id="search">
+            <label for="searchInput">Hier können die Nutzer nach ihrem Nutzernamen gesucht werden:</label>
+            <input type="text" id="searchInput" placeholder="Nutzername eingeben" style="width: 550px;">
+            <br>
+            <button id="searchButton">Suchen</button>
+        </section>
+    </main>
+
+
+    <!-- ======================== -->
+    <!-- Inhalt der Übersichtsseite -->
+    <!-- ======================== -->
+    <main id="page-list" style="display: none;">
+        <section id="userList">
+            <!-- Hier werden die Nutzer eingefügt -->
+        </section>
+
+        <section id="backLink">
+            <a href="index.html" id="backToSearchLink">Zurück zur Suche</a>
+        </section>
+
+        <section id="tryAgain" style="display: none;">
+            <p>Leider kein Ergebnis gefunden! Versuche es bitte erneut.</p>
+            <a href="index.html">Erneut versuchen</a>
+        </section>
+        
+        <section id="backLink" style="display: none;">
+            <a href="#" id="backToSearchLink">Zurück zur Suche</a>
+        </section>  
+    </main>
+
+
+    <!-- ======================== -->
+    <!-- Inhalt der No-Result Seite -->
+    <!-- ======================== -->
+    <main id="NoResult" style="display: none;">
+        <p>Leider kein Ergebnis gefunden! Versuche es bitte erneut.</p>
+        <a href="index.html">Erneut versuchen</a>
+    </main>
+
+
+    <!-- ========================== -->
+    <!-- Inhalt der Detailseite -->
+    <!-- ========================== -->
+    <main id="page-details" style="display: none;">
+        <section id="userDetails">
+            <h2 id="userTitle">Nutzername</h2>
+            <p><strong>Passwort:</strong> <span id="userPassword"></span></p>
+            <p><strong>Name:</strong> <span id="userFirstName"></span> <span id="userLastName"></span></p>
+            <p><strong>Alter:</strong> <span id="userAge"></span></p>
+            <p><strong>Geschlecht:</strong> <span id="userGender"></span></p>
+            <p><strong>Mailadresse:</strong> <span id="useremail"></span></p>
+            <p><strong>Telefonnummer:</strong> <span id="userPhone"></span></p>
+            <p><a href="#" id="commentsLink">Kommentare anzeigen</a></p>
+        </section>
+
+        <!-- Link zur Suchseite -->
+        <section id="backLink">
+            <a href="index.html" id="backToSearchLink">Zurück zur Suche</a>
+        </section>
+    </main>
+
+    <!-- =========================== -->
+    <!-- Inhalt der Kommentarseite -->
+    <!-- =========================== -->
+    <main id="page-comments" style="display: none;">
+        <section id="userComments">
+            <h2>Kommentare</h2>
+            <ul id="commentList">
+                <!-- Hier werden die Kommentare eingefügt -->
+            </ul>
+        </section>
+
+        <!-- Link zur Suchseite -->
+        <section id="backLink">
+            <a href="index.html" id="backToSearchLink">Zurück zur Suche</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Web-Programmierung
+    </footer>
+
+
+</body>
+</html>
